@@ -1,0 +1,27 @@
+<div style="text-align: center; margin-top: 3%; margin-bottom: 3%">
+  <h1>Monty Hall Simulation</h1>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Number of Simulations</mat-label>
+      <input matInput [(ngModel)]="numSimulations" type="number" />
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-checkbox [(ngModel)]="changeDoor">Switch Door</mat-checkbox>
+  </div>
+  <div>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="simulate()"
+      style="margin-bottom: 3%; margin-top: 2%"
+    >
+      Simulate
+    </button>
+  </div>
+  <div *ngIf="result">
+    <p>Wins: {{ result.wins }}</p>
+    <p>Losses: {{ result.losses }}</p>
+    <p>Total: {{ result.total }}</p>
+  </div>
+</div>
