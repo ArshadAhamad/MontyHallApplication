@@ -23,7 +23,7 @@ namespace MontyHallApi.Controllers
                 var result = _montyHallService.SimulateMontyHall(request.NumSimulations, request.ChangeDoor);
                 return Ok(result);
             }
-            catch (ArgumentException ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
