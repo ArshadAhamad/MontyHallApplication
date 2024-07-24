@@ -16,7 +16,7 @@ namespace MontyHallApi.Controllers
         }
 
         [HttpPost("simulate")]
-        public ActionResult<SimulationResult> SimulateMontyHall([FromBody] SimulationRequest request)
+        public IActionResult SimulateMontyHall([FromBody] SimulationRequest request)
         {
             try
             {
