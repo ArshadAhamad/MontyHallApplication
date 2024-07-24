@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class MontyHallService {
-  private apiUrl = 'https://localhost:7134/api/montyhall'; // Update with your backend URL
+  private apiUrl = 'https://localhost:7134/api/montyhall';
 
   constructor(private http: HttpClient) {}
 
