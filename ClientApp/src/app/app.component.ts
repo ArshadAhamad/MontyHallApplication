@@ -7,8 +7,11 @@ import { MontyHallService } from './monty-hall.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  numSimulations: number = 0; // Initialize numSimulations
-  changeDoor: boolean = false; // Initialize changeDoor
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+  numSimulations: number = 0;
+  changeDoor: boolean = false;
   result: any;
 
   constructor(private montyHallService: MontyHallService) {}
